@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define the small image width and height -->
+    <dimen name="small_image_width">200dp</dimen>
+    <dimen name="small_image_height">200dp</dimen>
+    <dimen name="margin_top">0dp</dimen>
+    <dimen name="gif_width">100dp</dimen>
+    <dimen name="gif_height">100dp</dimen>
+</resources>

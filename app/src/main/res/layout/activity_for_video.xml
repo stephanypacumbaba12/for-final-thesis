@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- VideoView for playing the video -->
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <!-- Back button -->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/back"
+        android:layout_width="66dp"
+        android:layout_height="52dp"
+        android:src="@drawable/back"
+        android:layout_margin="16dp"
+        android:layout_gravity="start|top"
+        android:contentDescription="Back" />
+
+    <!-- Exit Full-Screen button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/exit_fullscreen_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        app:fabSize="normal"
+        android:contentDescription="Exit Full Screen"
+        android:visibility="gone" />
+
+    <!-- Done button -->
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:visibility="gone"
+        android:backgroundTint="#65E614"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Toggle Full-Screen button -->
+    <Button
+        android:id="@+id/toggle_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="16dp"
+        android:text="Full Screen" />
+
+</FrameLayout>

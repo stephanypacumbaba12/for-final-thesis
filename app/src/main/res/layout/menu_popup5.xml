@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:backgroundTint="@color/blue1"
+    android:background="@drawable/selected_background">
+
+    <Button
+        android:id="@+id/picker_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Picker"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+
+    <Button
+        android:id="@+id/Number5_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Number"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/Letter5_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Letters"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/Shapes5_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Shapes"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/Mathematics5_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Mathematics"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/Colors5_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Color"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+    <Button
+        android:id="@+id/Science5_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Science"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnResetAge5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Age"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+
+
+</LinearLayout>

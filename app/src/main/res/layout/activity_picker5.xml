@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picker"
+    tools:context=".Picker5">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/number5_Button"
+        android:layout_width="69dp"
+        android:layout_height="75dp"
+        android:background="@drawable/number5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.199" />
+
+    <TextView
+        android:id="@+id/num_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="Numbers"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number5_Button"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/letters5_Button"
+        android:layout_width="69dp"
+        android:layout_height="75dp"
+        android:background="@drawable/letter5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/let_text"
+        android:layout_width="48dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Letters"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/letters5_Button" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/color5_Button"
+        android:layout_width="69dp"
+        android:layout_height="75dp"
+        android:background="@drawable/color5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num_text"
+        app:layout_constraintVertical_bias="0.174" />
+
+    <TextView
+        android:id="@+id/color_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Color"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color5_Button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/shapes5_Button"
+        android:layout_width="69dp"
+        android:layout_height="75dp"
+        android:background="@drawable/shape5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toEndOf="@+id/color5_Button"
+        app:layout_constraintTop_toBottomOf="@+id/let_text"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <TextView
+        android:id="@+id/shape_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Shape"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.669"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapes5_Button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/math5_Button"
+        android:layout_width="69dp"
+        android:layout_height="75dp"
+        android:background="@drawable/math5"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/color_text"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <TextView
+        android:id="@+id/math_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Mathematics"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/math5_Button" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/Science5_Button"
+        android:layout_width="69dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/science5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintStart_toEndOf="@+id/math5_Button"
+        app:layout_constraintTop_toBottomOf="@+id/shape_text"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <TextView
+        android:id="@+id/Science5_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Science"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.792"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Science5_Button" />
+
+    <Button
+        android:id="@+id/submitButton5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/blue1"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/goHomeButton5"
+        android:layout_width="71dp"
+        android:layout_height="61dp"
+        android:background="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

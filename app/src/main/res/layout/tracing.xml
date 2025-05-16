@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="@drawable/ques"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tracing">
+
+    <!-- TextView for the Question -->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/TotalQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/lets"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingBottom="8dp"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Can you trace the number?"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ImageView for the Number -->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/numberImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@id/questionText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <!-- Custom Tracing View -->
+
+    <!-- Layout for Buttons -->
+
+    <com.example.levelup.TracingView
+        android:id="@+id/tracingView"
+        android:layout_width="wrap_content"
+        android:layout_height="376dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:textSize="80pt"
+        app:layout_constraintBottom_toTopOf="@id/buttonLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/numberImage"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/eraseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginEnd="16dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:enabled="false"/> <!-- Disabled sa umpisa -->
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ques"
+    android:padding="16dp">
+
+    <!-- Main content container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/newage" />
+
+        <!-- Horizontal layout for Age 5 and Age 6 buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="Age 5" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age 6" />
+        </LinearLayout>
+
+        <!-- Centered Change Age button -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Change Age" />
+    </LinearLayout>
+
+    <!-- Back button overlaid on top-left corner -->
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/back"
+        android:layout_width="66dp"
+        android:layout_height="52dp"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="Back"
+        android:src="@drawable/back" />
+</FrameLayout>

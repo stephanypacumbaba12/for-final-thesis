@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LEVELUP"
+        tools:targetApi="31">
+
+
+
+        <activity
+            android:name=".NewAge5"
+            android:exported="false" />
+        <activity
+            android:name=".NewAge4"
+            android:exported="false" />
+        <activity
+            android:name=".Tracing"
+            android:exported="false" />
+        <activity
+            android:name=".Logout6"
+            android:exported="false" />
+        <activity
+            android:name=".Logout5"
+            android:exported="false" />
+        <activity
+            android:name=".Home6"
+            android:exported="false" />
+        <activity
+            android:name=".Home5"
+            android:exported="false" />
+        <activity
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
+            android:name=".Sound_AgeSix"
+            android:exported="false" /> <!-- Added Sound_AgeSix -->
+        <activity
+            android:name=".Shape_AgeSix"
+            android:exported="false" /> <!-- Added Shape_AgeSix -->
+        <activity
+            android:name=".Planet_AgeSix"
+            android:exported="false" /> <!-- Added Planet_AgeSix -->
+        <activity
+            android:name=".Number_AgeSix"
+            android:exported="false" /> <!-- Added Number_AgeSix -->
+        <activity
+            android:name=".Letter_AgeSix"
+            android:exported="false" /> <!-- Added Letter_AgeSix -->
+        <activity
+            android:name=".Color_AgeSix"
+            android:exported="false" /> <!-- Added Color_AgeSix -->
+        <activity
+            android:name=".Science_AgeFive"
+            android:exported="false" /> <!-- Added Science_AgeFive -->
+        <activity
+            android:name=".Shape_AgeFive"
+            android:exported="false" /> <!-- Added Shape_AgeFive -->
+        <activity
+            android:name=".Number_AgeFive"
+            android:exported="false" /> <!-- Added Number_AgeFive -->
+        <activity
+            android:name=".Math_AgeFive"
+            android:exported="false" /> <!-- Added Math_AgeFive -->
+        <activity
+            android:name=".Letter_AgeFive"
+            android:exported="false" /> <!-- Added Letter_AgeFive -->
+        <activity
+            android:name=".Color_AgeFive"
+            android:exported="false" /> <!-- Added Color_AgeFive -->
+        <activity
+            android:name=".Vegetable_AgeFour"
+            android:exported="false" /> <!-- Added Vegetable_AgeFour -->
+        <activity
+            android:name=".Shape_AgeFour"
+            android:exported="false" /> <!-- Added Shape_AgeFour -->
+        <activity
+            android:name=".Letter_AgeFour"
+            android:exported="false" /> <!-- Added Letter_AgeFour -->
+        <activity
+            android:name=".Color_AgeFour"
+            android:exported="false" /> <!-- Added Color_AgeFour -->
+        <activity
+            android:name=".Number_AgeFour"
+            android:exported="false" /> <!-- Added Number_4level -->
+        <activity
+            android:name=".Animals_AgeFour"
+            android:exported="false" /> <!-- Added Animals_AgeFour -->
+        <activity
+            android:name=".QuestionSound_6"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionShape_6"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPlanet_6"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionNumber_6"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionLetter_6"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionColor_6"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionScience_5"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionShape_5"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionNumber_5"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionMath_5"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionLetter_5"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionColor_5"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionVegetable_4"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionShape_4"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionLetter_4"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionColor_4"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionNumber_4"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionAnimals_4"
+            android:exported="false" />
+        <activity
+            android:name=".Planet6_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Shape6_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Color6_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Letter6_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Number6_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Science5_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Math5_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Letter5_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Number5_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Shape5_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Color5_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Vegetables1_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Animals1_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Letter1_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Shape1_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Color1_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Number1_vid"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".Picker6"
+            android:exported="false" />
+        <activity
+            android:name=".Picker5"
+            android:exported="false" />
+        <activity
+            android:name=".Picker"
+            android:exported="true" />
+        <activity
+            android:name=".Login_Page"
+            android:exported="false" />
+        <activity
+            android:name=".welcome"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

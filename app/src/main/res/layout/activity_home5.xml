@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context=".Home5">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/image_home"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:background="@drawable/icon5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="153dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_home"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <!--Progress bar ni ari sugod,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-->
+
+    <LinearLayout
+        android:layout_width="264dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.028"
+        tools:ignore="MissingConstraints">
+
+        <!-- Progress Bar Section -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:max="100"
+                android:progress="0"
+                android:progressBackgroundTint="#D3D3D3"
+                android:progressDrawable="@android:drawable/progress_horizontal"
+                android:progressTint="#4CAF50" />
+
+            <TextView
+                android:id="@+id/percentageLabel"
+                android:layout_width="50dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginStart="5dp"
+                android:gravity="start|center_vertical"
+                android:text="0%"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <!--Progress bar ari anng last,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-->
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/menu"
+        android:layout_width="49dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="-3dp"
+        android:background="@drawable/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Placeholder ImageViews for the 6 selected items -->
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/image_view_1"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/levelProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Level: 1/3"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/quizCompleteText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Quiz Complete"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.237"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/image_view_2"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/levelProgressText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Level: 1/3"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/quizCompleteText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Quiz Complete"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.466"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/image_view_3"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <TextView
+        android:id="@+id/levelProgressText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Level: 1/3"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/quizCompleteText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Quiz Complete"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/image_view_4"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.572" />
+
+    <TextView
+        android:id="@+id/levelProgressText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Level: 1/3"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.66"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/quizCompleteText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Quiz Complete"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/image_view_5"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.823" />
+
+    <TextView
+        android:id="@+id/levelProgressText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Level: 1/3"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/quizCompleteText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Quiz Complete"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/image_view_6"
+        android:layout_width="95dp"
+        android:layout_height="92dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.823" />
+
+    <TextView
+        android:id="@+id/levelProgressText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Level: 1/3"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.756"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/quizCompleteText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Quiz Complete"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/profile"
+        android:layout_width="53dp"
+        android:layout_height="49dp"
+        android:background="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

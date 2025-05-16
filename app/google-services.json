@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1019821003218",
+    "project_id": "final-capstone-f61f6",
+    "storage_bucket": "final-capstone-f61f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019821003218:android:a22fc889be2eb60815b80b",
+        "android_client_info": {
+          "package_name": "com.example.levelup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1yL1tR8G06IDZCsCmJQy7rMe04ggV7M8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

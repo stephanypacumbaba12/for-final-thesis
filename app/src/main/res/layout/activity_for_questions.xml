@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ques"
+    android:padding="16dp"
+    android:gravity="center">
+
+
+    <TextView
+        android:id="@+id/TotalQuestions"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-4dp"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:gravity="center"
+        android:text="Let’s play and learn! 🚀🧠"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/choices_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/feedback_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/question_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="This will be our question"
+            android:fontFamily="@font/oswald_semis_bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/ans_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#8F8C8C"
+            android:fontFamily="@font/oswald_semis_bold"
+            android:text="Answer A"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/ans_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#8F8C8C"
+            android:fontFamily="@font/oswald_semis_bold"
+            android:text="Answer B"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/ans_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#8F8C8C"
+            android:fontFamily="@font/oswald_semis_bold"
+            android:text="Answer C"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/ans_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#8F8C8C"
+            android:fontFamily="@font/oswald_semis_bold"
+            android:text="Answer D"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#65E614"
+        android:fontFamily="@font/oswald_semis_bold"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+</LinearLayout>
